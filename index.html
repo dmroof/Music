@@ -1,0 +1,141 @@
+<html>
+
+<head>
+</head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" ></script>
+<script src="https://rawgit.com/padolsey/jQuery-Plugins/master/sortElements/jquery.sortElements.js"></script>
+<body onload="CalStats();">
+
+	<div id="input" class="row">
+
+		<div class="form-group col-md-3" id="formNewName">
+			<label class="control-label " for="inputError">Song Name</label>
+			<input class="form-control" type="text" placeholder="Song Name" id="NewName" >
+			<span class="help-block">Enter a Song Name</span>
+		</div>
+		
+		<div class="form-group col-md-2" id="formNewTrack">
+			<label class="control-label " for="inputError">Track Number</label>
+			<input class="form-control" type="text" placeholder="Track #" id="NewTrack" >
+			<span class="help-block">Enter a Track Number</span>
+		</div>
+		
+		<div class="form-group col-md-2" id="formNewPlayCount">
+			<label class="control-label " for="inputError">Play Count</label>
+			<input  class="form-control" type="text" placeholder="Play Count" id="NewPlayCount" >
+			<span class="help-block">Enter a Play Count</span>
+		</div>
+	
+		<div id="inputOptions"class="form-group col-md-4" >		
+			<a href="#" class="btn btn-default" id="ImportJSON"><i class="fa fa-hdd-o fa-fw"></i> Import JSON</a>
+			<a href="#" class="btn btn-success" id="addTrack"><i class="fa fa-music"></i> Insert Track</a>
+		</div>
+	</div>
+
+	
+	
+	<div class="row">
+	<div id="datagrid1" class="panel panel-default" >
+
+	<table style="table-layout:fixed" class="table table-condensed">
+		<thead>
+		<tr class="darkTheme">
+			<th id="thName" class="columnA"><span>Track Name</span></th>
+			<th id="thTrack" class="columnB"><span>Track #</span></th>
+			<th id="thCount" class="columnC"><span>Play Count</span></th>
+		</tr>
+		</thead>
+	</table>
+	
+	<div id="datagrid1body">
+		<div style="max-height:100%;overflow:auto;">
+			<table id="datagrid1table" class="table table-condensed table-striped table-hover" style="table-layout:fixed">
+				
+
+				<tr>
+					<td>Limited Remorse</td>
+					<td>1</td>
+					<td>24</td>
+				</tr>
+				<tr>
+					<td>Desparate Education</td>
+					<td>2</td>
+					<td>18</td>
+				</tr>
+				<tr>
+					<td>Selling My Sunrise</td>
+					<td>3</td>
+					<td>125</td>
+				</tr>
+				<tr>
+					<td>Impossible Weekend</td>
+					<td>4</td>
+					<td>29</td>
+				</tr>
+				<tr>
+					<td>Some Kinda Ignorance</td>
+					<td>5</td>
+					<td>32</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	</div>
+	
+	
+
+	<header>
+
+		<ul class="blockTile">
+			<li>
+				<h1>Total Songs <span id="TotalSongs">( 5 )</span></h1>
+			</li>
+			<li>
+				<h1>Top Songs: <span id="TopTotalSongs">( 3 )</span>
+				<span>
+					<ol type="1" id="SongList">
+						<li>fdsf</li>
+						<li>fdsf</li>
+						<li>fdsf</li>
+					</ol>
+				</span>
+				</h1>
+			</li>
+		</ul>
+    </header>
+
+	
+	<!-- Popup box -->
+	<div id="popup1" class="overlay">
+		<div class="popup">
+			<h2 id="popupTitle">Import JSON</h2>
+				<a class="close close_popup" href="#">&times;</a>
+				<div class="content">
+									
+					<div class="row">
+						<textarea id="jsonOutput" ></textarea>
+					</div>
+					<div class="row">			
+						<a href="#" class="btn btn-success" id="LoadJSON"><i class="fa fa-check" aria-hidden="true"></i>  Load</a>
+						<a href="#" class="btn btn-danger" id="Cancel"><i class="fa fa-times" aria-hidden="true"></i>Cancel</a>
+					</div>
+									
+									
+				</div>
+		</div>
+	</div>
+	<!-- /#Popup box -->
+</body>
+
+
+<script>
+
+</script>
+
+<link href="formStyle.css" rel="stylesheet">
+<script src="formControl.js" ></script>
+</html>
