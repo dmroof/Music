@@ -13,19 +13,19 @@
 	<div id="input" class="row">
 
 		<div class="form-group col-md-3" id="formNewName">
-			<label class="control-label " for="inputError">Song Name</label>
+			<label class="control-label " >Song Name</label>
 			<input class="form-control" type="text" placeholder="Song Name" id="NewName" >
 			<span class="help-block">Enter a Song Name</span>
 		</div>
 		
 		<div class="form-group col-md-2" id="formNewTrack">
-			<label class="control-label " for="inputError">Track Number</label>
+			<label class="control-label ">Track Number</label>
 			<input class="form-control" type="text" placeholder="Track #" id="NewTrack" >
 			<span class="help-block">Enter a Track Number</span>
 		</div>
 		
 		<div class="form-group col-md-2" id="formNewPlayCount">
-			<label class="control-label " for="inputError">Play Count</label>
+			<label class="control-label " >Play Count</label>
 			<input  class="form-control" type="text" placeholder="Play Count" id="NewPlayCount" >
 			<span class="help-block">Enter a Play Count</span>
 		</div>
@@ -39,6 +39,7 @@
 	
 	
 	<div class="row">
+	<label class="control-label " >Music List</label>
 	<div id="datagrid1" class="panel panel-default" >
 
 	<table style="table-layout:fixed" class="table table-condensed">
@@ -86,28 +87,32 @@
 	</div>
 	</div>
 	
-	
+	</div>
 
-	<header>
+	<div class="row">
+	<label class="control-label " >Statistics</label>
+		<div class="panel panel-default" >
+			<header>
 
-		<ul class="blockTile">
-			<li>
-				<h1>Total Songs <span id="TotalSongs">( 5 )</span></h1>
-			</li>
-			<li>
-				<h1>Top Songs: <span id="TopTotalSongs">( 3 )</span>
-				<span>
-					<ol type="1" id="SongList">
-						<li>fdsf</li>
-						<li>fdsf</li>
-						<li>fdsf</li>
-					</ol>
-				</span>
-				</h1>
-			</li>
-		</ul>
-    </header>
-
+				<ul class="blockTile">
+					<li>
+						<h3>Total Songs <span id="TotalSongs">( 5 )</span></h3>
+					</li>
+					<li>
+						<h3>Top Songs: <span id="TopTotalSongs">( 3 )</span>
+						<span>
+							<ol type="1" id="SongList">
+								<li>temp</li>
+								<li>temp</li>
+								<li>temp</li>
+							</ol>
+						</span>
+						</h3>
+					</li>
+				</ul>
+			</header>
+		</div>
+	</div>
 	
 	<!-- Popup box -->
 	<div id="popup1" class="overlay">

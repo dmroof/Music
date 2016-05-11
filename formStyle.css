@@ -107,21 +107,16 @@ ul {
   }
 }
 
-header , .darkTheme {
+ .darkTheme {
   width: 100%;
   background: #38405e;
   padding: 3em 0;
   color: white;
 }
-header h1 {
+header h3 {
   font-weight: 300;
-  font-size: 36px;
   margin: 0.75em 0;
   padding-left:40px;
-}
-header h1 span, .darkTheme span {
-  font-size: 90%;
-  color: #1bbbef;
 }
 #SongList span{
 	color:#ffffff;
